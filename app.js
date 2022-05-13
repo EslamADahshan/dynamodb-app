@@ -18,7 +18,8 @@ var params = {
     TableName: tableName
 };
 // port on which the server listens
-const port = 3000;
+ 
+const PORT = process.env.PORT || 3000
 const client = new AWS.DynamoDB.DocumentClient();
 
 
